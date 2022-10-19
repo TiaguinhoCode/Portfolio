@@ -18,10 +18,8 @@ body{
 #background {
     background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.5));
     background-image: url(../img/background.jpeg);
-    /*height: 100vh;*/
+    height: 100vh;
     width: 100%;
-    display: table;
-    background-attachment: fixed;
     background-size: cover; 
 }
 
@@ -90,7 +88,7 @@ header {
     cursor: pointer;
 }
 
-button {
+button { /* Butão do contato */
     color: #fff;
     background: transparent;
     border: solid 2px #2ecc71;
@@ -101,19 +99,15 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover{ /* Butão do contato */
     background-color: #2ecc71;
     color: #000;
     transition: 0.5s;
 }
 
 .container-text {
-    padding: 150px 0 0 130px;
-        height: 100vh;
-    width: 100%;
-    display: table;
-    background-attachment: fixed;
-    background-size: cover; 
+    padding: 150px 0 0 155px;
+    padding-top: 200px;
 }
 
 .text h3 {
@@ -130,13 +124,12 @@ button:hover{
 
 .text p {
     color: #fff;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 13px;
     margin-top: 10px;
 }
 
 .redes-sociais a {
-    padding: 10px;
+    padding-left: 10px;
     margin-top: 5px;
 }
 
@@ -194,6 +187,7 @@ button:hover{
     .nav.active {
         transform: translateX(0);
     }
+
 }
 
 @keyframes navLinkFade {
