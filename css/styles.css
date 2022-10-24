@@ -10,19 +10,26 @@
 }
 
 /* overflow: hidden é para escurecer background*/
-body{
-    overflow: hidden;
-    background: linear-gradient();
-}
 
+/* Parallax */
 #background {
     background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.5));
     background-image: url(../img/background.jpeg);
     height: 100vh;
     width: 100%;
+    display: table;
+    background-attachment: fixed;
     background-size: cover; 
 }
 
+#caixa02 {
+    background-image: linear-gradient(to right, rgba(17, 110, 216, 0.747), rgb(255, 255, 255));
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+/* Menu */
 header {
     display: flex;
     justify-content: space-around;
@@ -88,7 +95,7 @@ header {
     cursor: pointer;
 }
 
-button { /* Butão do contato */
+button {
     color: #fff;
     background: transparent;
     border: solid 2px #2ecc71;
@@ -99,15 +106,22 @@ button { /* Butão do contato */
     cursor: pointer;
 }
 
-button:hover{ /* Butão do contato */
+button:hover{
     background-color: #2ecc71;
     color: #000;
     transition: 0.5s;
 }
 
+/* Conteúdo */
 .container-text {
-    padding: 150px 0 0 155px;
-    padding-top: 200px;
+    padding-bottom: 35px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-attachment: fixed;
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
 }
 
 .text h3 {
@@ -124,12 +138,13 @@ button:hover{ /* Butão do contato */
 
 .text p {
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 300;
     margin-top: 10px;
 }
 
 .redes-sociais a {
-    padding-left: 10px;
+    padding: 10px;
     margin-top: 5px;
 }
 
@@ -151,6 +166,7 @@ button:hover{ /* Butão do contato */
 
 }
 
+/* Responsivo */
 @media screen and (max-width: 999px) {
     body {
         overflow-x: hidden;
@@ -187,9 +203,9 @@ button:hover{ /* Butão do contato */
     .nav.active {
         transform: translateX(0);
     }
-
 }
 
+/* Aninação */
 @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -213,4 +229,6 @@ button:hover{ /* Butão do contato */
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
+/* Sections */
 

@@ -18,7 +18,7 @@ class MobileNavbar {
               }s`);
         });
       }
-      /* Quando eu clika */
+
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
@@ -42,4 +42,4 @@ const mobileNavbar = new MobileNavbar(
     ".nav",
     ".nav li",
   );
-mobileNavbar.init();
+  mobileNavbar.init();
