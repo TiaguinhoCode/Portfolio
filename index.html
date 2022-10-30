@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/AnimaçãoLoading.css">
     <title>Document</title>
 </head>
-<body>
-    <div id="background">
+<body id="fundovd" onload="preCarregamento();">
+    <!-- Tela De Loading -->
+    <div class="fundo">
+        <div class="center">
+            <div class="ring"></div>
+            <span>loading...</span>
+        </div>
+    </div>
+
+    <div id="background" class="load">
         <header id="header">
             <a href="index.html" class="logo"><img src="img/programming.png"></a>
             <!-- Logo -->
@@ -19,15 +28,15 @@
                 <!-- Nav = nav-list-->
                 <ul class="nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="#background">Home</a>
                     </li>
 
                     <li>
-                        <a href="about team/index.html">Sobre time</a>
+                        <a href="#caixa02">Sobre time</a>
                     </li>
 
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#caixa03">Projetos</a>
                     </li>
                     <button id="btn-contato">Meu contato</button>
                 </ul>
@@ -57,7 +66,8 @@
         </div>
     </div>
 
-    <div id="caixa02">
+    
+    <div id="caixa02" class="load2">
 
         <main class="cards">
             <section class="card">
@@ -89,7 +99,63 @@
 
         </main>
     </div>
+   
+    <!-- Container -->
+    <section id="caixa03" class="load3">
+        <div class="container">
+            <!-- Card proj -->
+            <div class="card-container">
+                <div class="card-proj">
+                    <div class="card-wrapper">
+                        <h2>Projeto 1</h2>
+                        <p>Vem ver"</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis saepe possimus velit eum laudantium 
+                        facere nulla nisi, blanditiis omnis, dolorem unde iusto est tenetur quibusdam autem quidem explicabo fugit 
+                        quis!
+                    </p>
+                </div>
+            </div>
+        
 
+            <!-- Card proj -->
+            <div class="card-container">
+                <div class="card-proj2">
+                    <div class="card-wrapper">
+                        <h2>Projeto 2</h2>
+                        <p>Vem ver"</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis saepe possimus velit eum laudantium 
+                        facere nulla nisi, blanditiis omnis, dolorem unde iusto est tenetur quibusdam autem quidem explicabo fugit 
+                        quis!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card proj -->
+            <div class="card-container">
+                <div class="card-proj3">
+                    <div class="card-wrapper">
+                        <h2>Projeto 3</h2>
+                        <p>Vem ver"</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis saepe possimus velit eum laudantium 
+                        facere nulla nisi, blanditiis omnis, dolorem unde iusto est tenetur quibusdam autem quidem explicabo fugit 
+                        quis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
         <!--
         <div class="container-time">
             <div class="caixa-sobre">
@@ -121,7 +187,7 @@
 
         </div>-->
 
-
+        <footer class="contato"></footer>
     <script src="js/script.js"></script>
 </body>
 </html>

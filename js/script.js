@@ -1,3 +1,25 @@
+/* Pre_carregamento */
+const pre_carregamento = document.querySelector("div.fundo");
+const caixa01 = document.querySelector("div.load");
+const caixa02 = document.querySelector("div.load2");
+const caixa03 = document.querySelector("section.load3");
+
+function preCarregamento() {
+  pre_carregamento.style.opacity = "1";
+  caixa01.style.display = "none";
+  caixa02.style.display = "none";
+  caixa03.style.display = "none";
+
+  setTimeout(() => {
+      pre_carregamento.style.display = "none";
+      caixa01.style.display = "flex";
+      caixa02.style.display = "table";
+      caixa03.style.display = "table";
+
+  }, 7000);
+}
+
+/* Menu Responsivo */ 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -43,3 +65,4 @@ const mobileNavbar = new MobileNavbar(
     ".nav li",
   );
   mobileNavbar.init();
+

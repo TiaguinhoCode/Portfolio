@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* overflow: hidden é para escurecer background*/
 
 /* Parallax */
@@ -29,14 +33,24 @@
     /*background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);*/
     /*background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);*/
     /*background-image: linear-gradient(rgb(0, 198, 248), rgba(0, 0, 0, 0.397));*/
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100%;
-    display: flex;
+    display: table;
     justify-content: center;
     align-items: center;
     font-size: 16px;
 }
 
+
+#caixa03 {
+    background-image: url(../img/background2.gif);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center center;
+}
 
 /* Menu */
 header {
@@ -179,7 +193,6 @@ button:hover{
 
 /* Responsivo */
 @media screen and (max-width: 720px) {
-
     .header {
     display: flex;
     justify-content: space-around;
@@ -233,12 +246,6 @@ button:hover{
         padding-top: 100px;
     }
 
-    .container {
-        display: flex;
-        align-items: center;
-        padding-bottom: 420px;
-    }
-
     main.cards {
         flex-direction: column;
     }
@@ -257,8 +264,32 @@ button:hover{
     }
 
     #caixa02 {
-        display: block;
+        display: table;
     }
+
+    #caixa03 {
+        display: table;
+    }
+    /*
+    .container {
+
+    }
+    */
+    .card-text p {
+        font-size: 70%;
+    }
+    /*
+    .card-text p {
+        font-size: 15px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+    }
+    */
 }
 
 /* Aninação */
@@ -406,4 +437,196 @@ background-image: linear-gradient(to right, #00ff1a63 0%, #00c8ffcc 100%);
 
 .btn-infra {
     background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
+
+/* Caixa 03 */
+.container {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+}
+
+.card-container:first-child {
+    margin-top: 90px;
+}
+
+.card-container:last-child {
+    margin-bottom: 100px;
+}
+
+.card-text{
+    width: 50%;
+    padding-top: 60px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.card-proj {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #60E1E0;
+    background-image: url('../img/mario\ dancing.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1E1E2A;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    box-shadow: 6px 10px 4px -2px rgba(0, 0, 0, 0.377);
+}
+
+.card-proj:hover {
+    background-image: url('../img/Mario.gif');
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.048);
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.card-wrapper p{
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5 ease-in-out;
+    color: #fff;
+}
+
+.card-proj:hover {
+    filter: unset;
+}
+
+.card-proj:hover > .card-wrapper::before {
+    height: 140px;
+    width: 140px;
+    border: 2px solid #000;
+    opacity: 1;
+}
+
+/* p aparecer */
+.card-proj:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+.card-proj2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/android.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1E1E2A;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    box-shadow: 6px 10px 4px -2px rgba(0, 0, 0, 0.377);
+}
+
+.card-proj2:hover {
+    background-image: url('../img/android2.gif');
+}
+
+.card-proj2:hover {
+    filter: unset;
+}
+
+.card-proj2:hover > .card-wrapper::before {
+    height: 140px;
+    width: 140px;
+    border: 2px solid #2ecc71;
+    opacity: 1;
+}
+
+.card-proj2:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+.card-proj3 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #60E1E0;
+    background-image: url('../img/robô.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1E1E2A;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    box-shadow: 6px 10px 4px -2px rgba(0, 0, 0, 0.377);
+}
+
+.card-proj3:hover {
+    background-image: url('../img/robô2.gif');
+}
+
+.card-proj3:hover {
+    filter: unset;
+}
+
+.card-proj3:hover > .card-wrapper::before {
+    height: 140px;
+    width: 140px;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+
+/* p aparecer */
+.card-proj3:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
 }
