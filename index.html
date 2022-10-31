@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/AnimaçãoLoading.css">
     <title>Document</title>
 </head>
-<body id="fundovd" onload="preCarregamento();">
+<body onload="preCarregamento();">
     <!-- Tela De Loading -->
     <div class="fundo">
-        <div class="center">
+        <div class="center_anel">
             <div class="ring"></div>
             <span>loading...</span>
         </div>
@@ -20,12 +20,13 @@
 
     <div id="background" class="load">
         <header id="header">
-            <a href="index.html" class="logo"><img src="img/programming.png"></a>
+            <a href="#background" class="logo"><img src="img/programming.png"></a>
             <!-- Logo -->
-           
+
+           <!-- Menu -->
             <nav class="cabecalho-link">
 
-                <!-- Nav = nav-list-->
+                <!-- Nav-list-->
                 <ul class="nav">
                     <li>
                         <a href="#background">Home</a>
@@ -45,9 +46,10 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </div><!-- Menu Mobile-->
         </header>
 
+        <!-- Conteúdo do Background-->
         <div class="container-text">
             <div class="text">
                 <h3>Olá, galera</h3>
@@ -62,10 +64,10 @@
                     </div>
                     <button class="btn">Participar do time</button>
                 </p>
-            </div> <!-- Apresentação -->
+            </div> 
         </div>
     </div>
-
+    <!-- Fim da Apresentação -->
     
     <div id="caixa02" class="load2">
 
@@ -156,6 +158,67 @@
             </div>
         </div>
     </section>
+
+    <!-- Rodapé -->
+    <footer>
+		<div class="main-container">
+			<div class="left box">
+				<h2> Redes Sociais</h2>
+					<div class="redes_social">
+						<a href="#"><span class="icon_instagram"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+						<a href="#"><span class="fab fa-instagram"></span></a>
+						<a href="#"><span class="fab fa-youtube"></span></a>
+					</div>
+			</div><!--left box-->
+
+			<div class="center box">
+				<h2>Endereço</h2>
+				<div class="container_box">
+					<div class="rua">
+						<span class="fas fa-map-marker"></span>
+						<span class="text">Av. Sgt. Hermínio Sampaio</span>
+					</div>
+
+					<div class="telefone">
+						<span class="fas fas fa-phone-alt"></span>
+						<span class="text">+55 (85) 98939-8123</span>
+					</div>
+
+					<div class="email">
+						<span class="fas fa-envelope"></span>
+						<span class="text">teamcod3r@gmail.com</span>
+					</div>
+				</div>
+
+			</div>
+			<div class="right box">
+				<h2>Contato:</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email:</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Mensagem:</div>
+							<textarea rows="2" cols="25" required></textarea>
+						</div>
+						<div class="btn">
+							<button type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!--main-content-->
+		<div class="bottom">
+			<div class="center">
+				<span class="credit">Criado por <a href="#">TeamCod3r</a></span>
+				<span class="far fa-copyright">2022 Todos os diteitos reservados</span>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--
         <div class="container-time">
             <div class="caixa-sobre">
@@ -187,7 +250,8 @@
 
         </div>-->
 
-        <footer class="contato"></footer>
+    
+
     <script src="js/script.js"></script>
 </body>
 </html>

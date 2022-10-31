@@ -6,7 +6,7 @@
     width: 100%;
     transition: 0.5s;
 }
-.center {
+.center_anel {
     display: flex;
     justify-content: center;
     text-align: center;

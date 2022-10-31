@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /* overflow: hidden é para escurecer background*/
 
@@ -290,6 +290,16 @@ button:hover{
         width: 80%;
     }
     */
+    footer{
+        bottom: 0px;
+    }
+    .main-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-container .box{
+        margin: 5px 0;
+    }
 }
 
 /* Aninação */
@@ -630,3 +640,151 @@ background-image: linear-gradient(to right, #00ff1a63 0%, #00c8ffcc 100%);
     visibility: visible;
     font-size: 14px;
 }
+
+/* footer */ 
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.main-container{
+    display: flex;
+}
+
+.main-container .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .container_box{
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.box .container_box:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: #2ecc71;
+    top: -10px;
+}
+
+.box .container_box:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    top: -10px;
+}
+
+
+.left .container_box .redes_social a span{
+    width: 40px;
+    height: 40px;
+    background: #b92020;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.left .redes_social .icon_instagram {
+    background-image: url("../img/");
+}
+
+.center .container_box .fas{
+    font-size: 20px;
+    background: #ffffff;
+    width: 40px;
+    height: 40px ;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .container_box .fas:hover{
+    background: #60E1E0;
+}
+
+.center .container_box .text{
+    font-size: 14px;
+    color: #2ecc71;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .container_box .telefone{
+    margin: 10px;
+}
+
+.center .container_box .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: #ffffff;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #2ecc71;
+}
+
+.right form input{
+    height: 35px;
+}
+
+.right form .text{
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: #2ecc71;
+}
+
+.right form .btn{
+    margin-top: 5px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    background: #2ecc71;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover{
+    background: rgb(255, 255, 255);
+}
+
+.bottom .center{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+}
+
+.bottom .center span{
+    color: #fff;
+    font-size: 13px;
+}
+
+.bottom .center a{
+    color: #2ecc71;
+    text-decoration: none;
+}
+
