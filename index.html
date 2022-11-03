@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/AnimaçãoLoading.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 <body onload="preCarregamento();">
@@ -39,7 +40,7 @@
                     <li>
                         <a href="#caixa03">Projetos</a>
                     </li>
-                    <button id="btn-contato">Meu contato</button>
+                    <button id="btn-contato"><a href="#rodape">Meu contato</a></button>
                 </ul>
             </nav> <!-- Cabeçalho link -->
             <div class="mobile-menu">
@@ -108,10 +109,12 @@
             <!-- Card proj -->
             <div class="card-container">
                 <div class="card-proj">
-                    <div class="card-wrapper">
-                        <h2>Projeto 1</h2>
-                        <p>Vem ver"</p>
-                    </div>
+                    <a href="Mario/index.html">
+                        <div class="card-wrapper">
+                            <h2>Projeto 1</h2>
+                            <p>Vem ver"</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card-text">
                     <p>
@@ -126,10 +129,12 @@
             <!-- Card proj -->
             <div class="card-container">
                 <div class="card-proj2">
-                    <div class="card-wrapper">
-                        <h2>Projeto 2</h2>
-                        <p>Vem ver"</p>
-                    </div>
+                    <a href="https://github.com/">
+                        <div class="card-wrapper">
+                            <h2>Projeto 3</h2>
+                            <p>Vem ver"</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card-text">
                     <p>
@@ -143,10 +148,12 @@
             <!-- Card proj -->
             <div class="card-container">
                 <div class="card-proj3">
-                    <div class="card-wrapper">
-                        <h2>Projeto 3</h2>
-                        <p>Vem ver"</p>
-                    </div>
+                    <a href="">
+                        <div class="card-wrapper">
+                            <h2>Projeto 3</h2>
+                            <p>Vem ver"</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card-text">
                     <p>
@@ -160,15 +167,14 @@
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="rodape">
 		<div class="main-container">
 			<div class="left box">
 				<h2> Redes Sociais</h2>
 					<div class="redes_social">
-						<a href="#"><span class="icon_instagram"></span></a>
-						<a href="#"><span class="fab fa-twitter"></span></a>
-						<a href="#"><span class="fab fa-instagram"></span></a>
-						<a href="#"><span class="fab fa-youtube"></span></a>
+						<a href="#"><img class="icon_instagram" src="img/instagram.png"></a>
+						<a href="#"><img class="icon_linkedin" src="img/linkedin.png"></a>
+						<a href="#"><img class="icon_github" src="img/github.png"></a>
 					</div>
 			</div><!--left box-->
 
@@ -218,7 +224,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <!--
         <div class="container-time">
             <div class="caixa-sobre">

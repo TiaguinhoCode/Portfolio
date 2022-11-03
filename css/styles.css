@@ -19,14 +19,22 @@ html {
 
 /* Parallax */
 #background {
-    background: linear-gradient(rgba(0, 0, 0, 0.26) ,rgb(27, 145, 192) );
     background-image: url(../img/background.jpeg);
     height: 100vh;
     width: 100%;
     display: table;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
+
+
 
 #caixa02 {
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -40,6 +48,7 @@ html {
     align-items: center;
     font-size: 16px;
 }
+
 
 
 #caixa03 {
@@ -92,7 +101,7 @@ header {
     font-size: 13px;
 }
 
-.cabecalho-link a:hover { 
+.cabecalho-link .nav li a:hover { 
     color: #000000;
     transition: 0.3s all;
     padding: 10px 10px;
@@ -136,6 +145,8 @@ button:hover{
     color: #000;
     transition: 0.5s;
 }
+
+
 
 /* Conteúdo */
 .container-text {
@@ -687,20 +698,11 @@ footer{
     top: -10px;
 }
 
-
-.left .container_box .redes_social a span{
-    width: 40px;
-    height: 40px;
-    background: #b92020;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
-    font-size: 10px;
-    transition: 0.3s;
-}
-
-.left .redes_social .icon_instagram {
-    background-image: url("../img/");
+.left .redes_social a img{
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
 }
 
 .center .container_box .fas{
@@ -788,3 +790,6 @@ footer{
     text-decoration: none;
 }
 
+.container-text, .cards, .card-container {
+    visibility: hidden;
+}
