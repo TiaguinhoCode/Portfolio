@@ -15,10 +15,23 @@ const pula = () => {
 const loop = setInterval(() =>{
     /* Condição de perde */
     const pipePosition = pipe.offsetLeft;
+    /* Pega posição do mario */
+    const marioPosition = window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if(pipePosition <= 120) {
+    console.log(marioPosition);
+
+    if(pipePosition <= 140 && pipePosition > 0 && marioPosition < 90) {
 
         pipe.style.animation = 'none';
+        pipe.style.left = `${pipePosition}px`; 
+
+        /* parando posição por cima */
+        mario.style.animation = 'none';
+        mario.style.bottom = `${marioPosition}px`; 
+
+        /* Mario morrendo */
+        mario.src = './img/game-over.png';
+        mario.style.width = '120px';
     }
 }, 10);
 
