@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio de equipe de devs 
+Portfolio de uma equipe de devs 
