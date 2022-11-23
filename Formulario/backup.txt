@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-img">
+            <img src="img/undraw_programming_re_kg9v.svg">
+        </div>
+
+        <div class="formulario">
+            <form action="#">
+                <div class="form_title">
+                    <div class="titulo">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="home">
+                        <button><a href="#">Home</a></button>
+                    </div>
+                </div>
+
+                <div class="form-envio">
+                    <div class="caixa-input">
+                        <label for="firstname">Primeiro nome:</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="lasttname">Sobre nome:</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="e-mail">E-Mail:</label>
+                        <input id="e-mail" type="email" name="e-mail" placeholder="exemplo@exemplo.com" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="celular">Celular:</label>
+                        <input id="celular" type="tel" name="celular" placeholder="(00) 0000-0000" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="cep">Cep:</label>
+                        <input id="cep" type="number" name="cep" placeholder="00000-000" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Digite seu Endereço:" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="bairro">Bairro:</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu Bairro:" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="numero">Número:</label>
+                        <input id="numero" type="number" name="numero" placeholder="Digite número da sua casa:" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="curriculo">Curriculo:</label>
+                        <input id="curriculo" type="file" name="curriculo" required> 
+                    </div>
+                </div>
+
+                <div class="generos">
+                    <div class="genero-titulos">
+                        <h6>Gênero</h6> 
+                    </div>
+
+                    <div class="genero-grupo">
+                        <div class="genero-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div> 
+                        
+                        <div class="genero-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enviar">
+                    <button><a href="#">Enviar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+css: 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #55e993a4;
+    padding: 1rem;
+}
+
+.form-img img {
+    width: 31rem;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.formulario .form_title {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .home {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.formulario .home button {
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #2ecc71;
+    /*box-shadow: 5px 5px 10px #0000001c;*/
+}
+
+.formulario .home button:hover {
+    background-color: rgb(0, 225, 255);
+    transition: 0.5s;
+}
+
+.formulario .home a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*.formulario .home a:hover {
+    transition: 0.3s all;
+    padding: 6px 6px;
+}*/
+
+.formulario .titulo h1:after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.formulario .form-envio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.formulario .form-envio .caixa-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem
+}
+
+.formulario .form-envio .caixa-input input {
+    margin: 6px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}

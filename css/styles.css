@@ -200,6 +200,10 @@ button:hover{
     margin-top: 10px;
 }
 
+.btn a {
+    color: white;
+}
+
 #btn-mobile {
     display: none;
 }
@@ -662,7 +666,7 @@ footer{
     main.cards {
         flex-direction: column;
     }
-
+    
     main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
