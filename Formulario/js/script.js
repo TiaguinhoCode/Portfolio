@@ -25,11 +25,45 @@ function buscaCep() {
     }
 }
 
-
-
 /* Evento */
 window.onload = function() {
     let txtcep = document.getElementById("cep");
-    txtcep.addEventListener("blur", buscaCep)
+    txtcep.addEventListener("blur", buscaCep);
+
+    const celular = document.getElementById('celular');
+
+    const welcome = document.getElementById('eviar');
+    welcome.onclick = function() {
+        window.alert("Seja bem vindo(a)");
+    }
+
+    // Criar evento 
+    txtcep.addEventListener('keypress', () => {
+        // Vai ler caracteres
+        let inputLength = txtcep.value.length
+
+        if (inputLength == 5 ) {
+            txtcep.value += '-'
+        }
+    });
+
+    // Mascara do cell
+    celular.addEventListener('keypress', () => {
+        // Vai ler caracteres
+        let celularLength = celular.value.length
+
+        if (celularLength == 0 ) {
+            celular.value += '('
+        }
+        if (celularLength == 3 ) {
+            celular.value += ')'
+        }
+        if (celularLength == 9 ) {
+            celular.value += '-'
+        }
+    });
+
+
 }
+
 

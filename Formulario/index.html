@@ -31,13 +31,13 @@
                     </div>
 
                     <div class="caixa-input" id="respon">
-                        <label for="lasttname">Sobre nome:</label>
+                        <label for="lasttname">Sobrenome:</label>
                         <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
                     </div>
 
                     <div class="caixa-input">
                         <label for="e-mail">E-Mail:</label>
-                        <input id="e-mail" type="email" name="e-mail" placeholder="exemplo@exemplo.com" required>
+                        <input id="e-mail" type="email" name="e-mail" placeholder="exemplo@dominio.com" required>
                     </div>
 
                     <div class="caixa-input" id="respon">
@@ -47,7 +47,7 @@
 
                     <div class="caixa-input" id="respon">
                         <label for="cep">Cep:</label>
-                        <input id="cep" type="text" name="cep" placeholder="00000-000" required maxlength="14">
+                        <input id="cep" type="text" name="cep" placeholder="00000-000" required maxlength="9">
                     </div>
 
                     <div class="caixa-input" id="respon">
@@ -100,8 +100,8 @@
                 </div>
 
                 <div class="enviar-resert">
-                    <button onclick="consultaCep()"><a href="#">Enviar</a></button>
-                    <button><a href="#">Resert</a></button>
+                    <button onclick="consultaCep()" type="submit" id="eviar">Enviar</button>
+                    <button type="reset">Resert</button>
                 </div>
 
             </form>

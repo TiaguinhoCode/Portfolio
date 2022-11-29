@@ -187,7 +187,7 @@ body {
     transition: 0.5s;
 }
 
-.enviar-resert button a {
+.enviar-resert button {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
