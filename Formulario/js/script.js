@@ -32,11 +32,6 @@ window.onload = function() {
 
     const celular = document.getElementById('celular');
 
-    const welcome = document.getElementById('eviar');
-    welcome.onclick = function() {
-        window.alert("Seja bem vindo(a)");
-    }
-
     // Criar evento 
     txtcep.addEventListener('keypress', () => {
         // Vai ler caracteres
